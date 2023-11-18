@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notable</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <p>Welcome to our appointment management system. Below are the available API routes:</p>
+
+    <h2>Get Routes <span>&#10003;</span> </h2> 
+    <ul>
+        <li><strong>GET /appointments</strong>: List all appointments.</li>
+        <li><strong>GET /appointments/:id</strong>: Fetch details of a specific appointment.</li>
+        <li><strong>GET /doctors</strong>: Display all doctors.</li>
+        <li><strong>GET /doctors/:id</strong>: Get details about a specific doctor and their appointments.</li>
+    </ul>
+
+    <h2>Post Routes <span>&#10003;</span> </h2>
+    <ul>
+        <li><strong>POST /doctors/</strong>: Add new doctors to the system.  body={"name":"Dr. Emily", last_name="Sanders" }</li>
+        <li><strong>POST /appointments/</strong>: Create new appointments. body={name="Jane Doe", "description":"General Checkup", "start_time":"2023-10-02 9:00:00", "doctor_id":"1"}</li>
+    </ul>
+
+    <h2>Delete Routes <span>&#10003;</span></h2>
+    <ul>
+        <li><strong>DELETE /doctors/:id</strong>: Remove a doctor from the system.</li>
+        <li><strong>DELETE /appointments/:id</strong>: Cancel or remove appointments.</li>
+    </ul>
+</body>
+</html>
